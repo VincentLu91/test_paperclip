@@ -15,9 +15,10 @@
 		<tr><%= post.title %></tr> <br> <br>
 		<tr><%= post.description %></tr> <br>
 		<tr><%= image_tag post.image.url(:thumb) %></tr> <br>
-        <tr><%= link_to 'Show', post %></tr>
-        <tr><%= link_to 'Edit', edit_post_path(post) %></tr>
-        <tr><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></tr><br>
+		<br>
+        <tr><%= link_to 'View', post %></tr> | 
+        <tr><%= link_to 'Edit Post', edit_post_path(post) %></tr> | 
+        <tr><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %></tr><br>
 		<h3>-----------------------------------</h3>
 		<br>
       </tr>
